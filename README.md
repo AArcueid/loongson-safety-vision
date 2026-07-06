@@ -4,7 +4,6 @@
 
 Real-time industrial PPE (Personal Protective Equipment) compliance detection on the **Loongson 2K0301** embedded platform. YOLOv5n (320×320) + NCNN inference at ~1.3 FPS on a single-core LoongArch CPU.
 
-<img src="docs/demo.jpg" width="640">
 
 ## Features
 
