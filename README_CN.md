@@ -35,7 +35,7 @@
 | Python | 3.7+ | |
 | OpenCV | 3.2+ | `cv2` 模块可导入 |
 | NCNN | LoongArch | 从[龙芯开源库](https://gitee.com/lq-tech/Loongson_2k300_301_Library)获取 |
-| USB 摄像头 | UVC 标准 | 推荐罗技 C270 |
+| USB 摄像头 | UVC 标准 | — |
 
 ### 开发 PC
 
