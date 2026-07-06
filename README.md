@@ -96,6 +96,7 @@ The system checks three PPE items simultaneously. **All three must be satisfied 
 | Reflective Vest | `no-vest` | Must NOT be present |
 
 > **Why `no-vest` instead of `vest`?** Our dataset has significantly more high-quality `no-vest` annotations. The negative-class detection is more reliable than positive `vest` detection for this dataset.
+> **Actually there are also another test items like mask,gloves,no-gloves,person,boots,but since the accuracy problem I only take the top3 accurate and also the most common items into account.Of cause you can add them if needed. 
 
 ### API Usage
 
@@ -125,6 +126,13 @@ ncnnoptimize best.ncnn.param best.ncnn.bin best320_opt.param best320_opt.bin 0
 ```
 
 See [LQ_TinyClassifier](https://gitee.com/lq-tech/Loongson_2k300_301_Library) for the Loongson NCNN SDK.
+
+## Category Definition
+
+```
+0:helmet  1:no-helmet  2:vest  3:no-vest  4:mask
+5:gloves  6:no-gloves  7:person  8:boots
+```
 
 ## Known Limitations
 
