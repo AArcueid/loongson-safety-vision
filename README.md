@@ -2,7 +2,7 @@
 
 > 中文文档：[README_CN.md](README_CN.md)
 
-Real-time industrial PPE (Personal Protective Equipment) compliance detection on the **Loongson 2K0301** embedded platform. YOLOv5n (320×320) + NCNN inference at ~1.3 FPS on a single-core LoongArch CPU.
+Real-time industrial PPE (Personal Protective Equipment) compliance detection on the **Loongson 2K1000LA** embedded platform. YOLOv5n (320×320) + NCNN inference at ~1.3 FPS on a single-core LoongArch CPU.
 
 
 ## Features
@@ -30,7 +30,7 @@ Real-time industrial PPE (Personal Protective Equipment) compliance detection on
 
 ## Requirements
 
-### Board (Loongson 2K0301)
+### Board (Loongson 2K1000LA)
 
 | Component | Version | Notes |
 |-----------|---------|-------|
@@ -38,7 +38,7 @@ Real-time industrial PPE (Personal Protective Equipment) compliance detection on
 | Python | 3.7+ | |
 | OpenCV | 3.2+ | `cv2` module must be importable |
 | NCNN | LoongArch | Obtain from [Loongson SDK](https://gitee.com/lq-tech/Loongson_2k300_301_Library) |
-| USB Camera | UVC standard | Logitech C270 recommended |
+| USB Camera | UVC standard | — |
 
 ### Development PC
 
@@ -133,6 +133,3 @@ See [LQ_TinyClassifier](https://gitee.com/lq-tech/Loongson_2k300_301_Library) fo
 - **Not for multi-person crowded scenes** — designed for single-person compliance check.
 - **Fire detection** is currently not supported (training data not included).
 
-## License
-
-This project is for the Loongson Embedded Competition. Model weights are trained on publicly available Roboflow datasets.
