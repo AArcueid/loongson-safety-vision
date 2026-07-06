@@ -2,8 +2,6 @@
 
 基于**龙芯 2K0301** 嵌入式平台的工业 PPE（个人防护装备）合规实时检测。YOLOv5n (320×320) + NCNN 推理，单核 LoongArch CPU 约 1.3 FPS。
 
-<img src="docs/demo.jpg" width="640">
-
 ## 功能
 
 - **320×320 YOLOv5n** 优化嵌入式部署，计算量仅为标准 640×640 的 1/4
