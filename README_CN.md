@@ -90,6 +90,7 @@ python3 safety_monitor.py
 | 口罩 | `mask` | 必须检测到 |
 | 反光衣 | `no-vest` | 必须未出现 |
 
+实际上检测项还有mask、gloves、no-gloves、person、boots，但由于检测精度等问题并没有纳入判断考量。但是如果你需要的话可以加上。
 > **为什么反光衣用 `no-vest` 判定？** 数据集中 `no-vest`（未穿反光衣）的高质量标注远多于 `vest`（穿了反光衣）。反例检测比正例更可靠。
 
 ### API 用法
@@ -120,6 +121,13 @@ ncnnoptimize best.ncnn.param best.ncnn.bin best320_opt.param best320_opt.bin 0
 ```
 
 NCNN SDK 详见[龙芯开源库](https://gitee.com/lq-tech/Loongson_2k300_301_Library)。
+
+## 类别定义
+
+```
+0:helmet  1:no-helmet  2:vest  3:no-vest  4:mask
+5:gloves  6:no-gloves  7:person  8:boots
+```
 
 ## 已知限制
 
