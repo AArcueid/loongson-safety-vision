@@ -95,8 +95,9 @@ The system checks three PPE items simultaneously. **All three must be satisfied 
 | Mask | `mask` | Must be present |
 | Reflective Vest | `no-vest` | Must NOT be present |
 
+Actually there are also another test items like mask,gloves,no-gloves,person,boots,but since the accuracy problem I only take the top3 accurate and also the most common items into account.Of cause you can add them if needed. 
 > **Why `no-vest` instead of `vest`?** Our dataset has significantly more high-quality `no-vest` annotations. The negative-class detection is more reliable than positive `vest` detection for this dataset.
-> **Actually there are also another test items like mask,gloves,no-gloves,person,boots,but since the accuracy problem I only take the top3 accurate and also the most common items into account.Of cause you can add them if needed. 
+
 
 ### API Usage
 
