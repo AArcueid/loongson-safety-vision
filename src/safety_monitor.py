@@ -1,6 +1,6 @@
 """实时安全监控——检测 + 合规判断 + 画面标注"""
 import cv2, time
-from safety_check import detect, check
+from safety_check import detect, check, check_frame_hybrid
 
 SKIP = 3
 COLORS = [(0,255,0),(0,0,255),(255,200,0),(0,128,255)]
@@ -20,7 +20,7 @@ while True:
         r = last_result
     else:
         try:
-            r = check_frame(frame)
+            r = check_frame_hybrid(frame)
         except:
             r = {"status": "error", "missing": [], "details": [], "summary": "推理失败"}
         last_result = r

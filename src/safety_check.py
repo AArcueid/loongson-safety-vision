@@ -104,6 +104,15 @@ def check_frame(frame):
     result["detections"] = dets
     return result
 
+def check_frame_hybrid(frame):
+    """混合推理：优先云端回退本地"""
+    try:
+        from cloud_api import check_hybrid
+        return check_hybrid(frame)
+    except ImportError:
+        return check_frame(frame)
+    return result
+
 if __name__ == "__main__":
     # 测试：拍照 → 检测 → 合规判断
     cap = cv2.VideoCapture(0)
